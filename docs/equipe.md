@@ -19,8 +19,8 @@ title: Équipe et rôles
 
 | Membre | Formation | Compte GitHub |
 |---|---|---|
-| Prénom Nom | … | [@pseudo](https://github.com/pseudo) |
-| Prénom Nom | … | [@pseudo](https://github.com/pseudo) |
+| Romain VANTALON | … | [@RomainVantalon](https://github.com/RomainVantalon) |
+| Samuel MOATTI | … | [@SamuelMOATTI](https://github.com/SamuelMOATTI) |
 
 ## Rôles
 
