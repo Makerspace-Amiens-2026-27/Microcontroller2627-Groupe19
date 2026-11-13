@@ -1,29 +1,27 @@
 ---
 layout: default
-title: "2026-11-13: Comprehension des microcontroleurs"
-parent: Samuel MOATTI
+title: "2026-09-23 : découpe laser du boîtier"
+parent: Étudiant 1
 grand_parent: Journal de bord
 ---
 
-<!--
-Modèle de séance, ce fichier n'apparaît pas sur le site (son nom commence par "_").
-Copiez-le dans votre dossier, renommez la copie avec la date (ex. 2026-09-23.md), puis :
-- title : la date et le sujet de la séance ;
-- parent : EXACTEMENT le titre de votre page étudiant (docs/journal/votre-dossier/index.md).
--->
+# 2026-09-23 : découpe laser du boîtier
 
-# 2026-11-13 : Comprehension des microcontroleurs
+{: .a_supprimer }
+> Exemple de séance : supprimez ce fichier quand vous avez créé vos propres séances.
 
-**Séance :** planifiée · **Durée :** 1 h 30
+**Séance :** planifiée · **Durée :** 2 h
 
 ## Fait
-Nous avons fais notre groupe avec Romain Vantalon, on a eu une boite avec la quelle se trouve des microcontroleurs des cables et une breadboard.
-Ensuite j'ai initialiser PlatformIO et Teleplot pour pouvoir utiliser les microcontroleurs et nous avons regarder a quoi servais les micocontroleurs puis nous avons avancer sur le TD
+
+Découpe du boîtier en contreplaqué 3 mm. Premier assemblage à blanc.
 
 ## Pourquoi
 
-Les décisions prises et leurs raisons (mesures, essais, échanges avec l'équipe).
+Les encoches étaient trop serrées : ajout d'une compensation de 0,1 mm dans le
+fichier de découpe (réglage mesuré sur une chute).
 
 ## Reste à faire
 
-Les prochaines actions, et ce qui bloque éventuellement.
+- Redécouper la face avant avec la compensation.
+- Demander à l'équipe électronique l'emplacement définitif du connecteur USB.
