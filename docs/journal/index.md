@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Journal de bord
+parent: Samuel MOATTI
 nav_order: 8
 has_children: true
 ---

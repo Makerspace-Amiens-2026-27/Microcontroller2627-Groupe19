@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "AAAA-MM-JJ : sujet de la séance"
-parent: Prénom Nom
+title: "2026-11-13: Comprehension des microcontroleurs"
+parent: Samuel MOATTI
 grand_parent: Journal de bord
 ---
 
@@ -12,13 +12,13 @@ Copiez-le dans votre dossier, renommez la copie avec la date (ex. 2026-09-23.md)
 - parent : EXACTEMENT le titre de votre page étudiant (docs/journal/votre-dossier/index.md).
 -->
 
-# AAAA-MM-JJ : sujet de la séance
+# 2026-11-13 : Comprehension des microcontroleurs
 
-**Séance :** planifiée / hors créneau · **Durée :** 2 h
+**Séance :** planifiée · **Durée :** 1 h 30
 
 ## Fait
-
-Ce que j'ai réalisé pendant la séance.
+Nous avons fais notre groupe avec Romain Vantalon, on a eu une boite avec la quelle se trouve des microcontroleurs des cables et une breadboard.
+Ensuite j'ai initialiser PlatformIO et Teleplot pour pouvoir utiliser les microcontroleurs et nous avons regarder a quoi servais les micocontroleurs puis nous avons avancer sur le TD
 
 ## Pourquoi
 
