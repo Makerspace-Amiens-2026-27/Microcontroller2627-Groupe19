@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "2026-MM-JJ : sujet de la séance"
-parent: MOATTI Samuel
+parent: Groupe 19 (Samuel MOATTI/Romain VANTALON)
 grand_parent: Journal de bord
 ---
 
