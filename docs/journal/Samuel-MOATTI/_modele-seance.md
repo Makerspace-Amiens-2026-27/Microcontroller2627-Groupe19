@@ -1,27 +1,29 @@
 ---
 layout: default
-title: "2026-09-23 : découpe laser du boîtier"
-parent: Étudiant 1
+title: "2026-MM-JJ : sujet de la séance"
+parent: MOATTI Samuel
 grand_parent: Journal de bord
 ---
 
-# 2026-09-23 : découpe laser du boîtier
+<!--
+Modèle de séance, ce fichier n'apparaît pas sur le site (son nom commence par "_").
+Copiez-le dans votre dossier, renommez la copie avec la date (ex. 2026-09-23.md), puis :
+- title : la date et le sujet de la séance ;
+- parent : EXACTEMENT le titre de votre page étudiant (docs/journal/votre-dossier/index.md).
+-->
 
-{: .a_supprimer }
-> Exemple de séance : supprimez ce fichier quand vous avez créé vos propres séances.
+# AAAA-MM-JJ : sujet de la séance
 
-**Séance :** planifiée · **Durée :** 2 h
+**Séance :** planifiée / hors créneau · **Durée :** 2 h
 
 ## Fait
 
-Découpe du boîtier en contreplaqué 3 mm. Premier assemblage à blanc.
+Ce que j'ai réalisé pendant la séance.
 
 ## Pourquoi
 
-Les encoches étaient trop serrées : ajout d'une compensation de 0,1 mm dans le
-fichier de découpe (réglage mesuré sur une chute).
+Les décisions prises et leurs raisons (mesures, essais, échanges avec l'équipe).
 
 ## Reste à faire
 
-- Redécouper la face avant avec la compensation.
-- Demander à l'équipe électronique l'emplacement définitif du connecteur USB.
+Les prochaines actions, et ce qui bloque éventuellement.
