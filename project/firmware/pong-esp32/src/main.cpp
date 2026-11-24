@@ -5,11 +5,57 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7789.h>
 #include "config.h"
+constexpr int PRESSED_LEVEL = LOW;           // niveau lu quand on appuie (étape 1)
+constexpr unsigned long DEBOUNCE_MS = 30;
+
+struct Button {
+    int pin;
+    int stableLevel;              // dernier niveau confirmé
+    int lastRead;                 // dernière lecture brute
+    unsigned long lastChangeMs;   // date du dernier mouvement du signal
+};
+
+Button button = {PIN_BUTTON, !PRESSED_LEVEL, !PRESSED_LEVEL, 0};
 
 
 float dotX = 120, dotY = 160;   // position calculée
 int drawnX = 120, drawnY = 160; // position affichée
 Adafruit_ST7789 tft(&SPI, PIN_TFT_CS, PIN_TFT_DC, PIN_TFT_RESET);
+constexpr int JOYSTICK_DEADZONE = 300;
+int joystickCenterX = 2048;
+
+void calibrateJoystick() {
+    long sum = 0;
+    for (int i = 0; i < 16; i++) {
+        sum += analogRead(PIN_JOYSTICK_X);
+        delay(2);
+    }
+    joystickCenterX = sum / 16;
+}
+
+// Convertit une lecture brute (0..4095) en valeur entre -1.0 et +1.0
+float normalizeJoystick(int raw, int center) {
+    int offset = raw - center;
+    if (abs(offset) < JOYSTICK_DEADZONE) {
+        return 0.0f;
+    }
+    int range = (offset > 0) ? (4095 - center) : center;
+    return constrain((float)offset / range, -1.0f, 1.0f);
+}
+
+bool justPressed(Button& b) {
+    int level = digitalRead(b.pin);
+    if (level != b.lastRead) {         // le signal bouge : rebond ou vrai changement
+        b.lastRead = level;
+        b.lastChangeMs = millis();
+    }
+
+    if (millis() - b.lastChangeMs > DEBOUNCE_MS && level != b.stableLevel) {
+        b.stableLevel = level;         // stable depuis 30 ms : changement confirmé
+        return level == PRESSED_LEVEL; // vrai sur l'appui, faux sur le relâchement
+    }
+    return false;
+}
 
 void setup() {
     SPI.begin(PIN_TFT_SCK, -1, PIN_TFT_MOSI, PIN_TFT_CS);  // pas de MISO
