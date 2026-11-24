@@ -12,3 +12,5 @@ constexpr int PIN_TFT_DC    = D8;
 constexpr int PIN_TFT_SCK   = D9;
 constexpr int PIN_TFT_MOSI  = D10;
 constexpr int PIN_TFT_CS    = -1;   // CS relié à GND : pas de broche
+
+constexpr uint32_t FRAME_TIME_MS = 16;
