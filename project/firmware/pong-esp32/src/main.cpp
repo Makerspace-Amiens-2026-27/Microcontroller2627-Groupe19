@@ -70,6 +70,7 @@ void setup() {
 
     tft.drawRect(20, 120, 200, 60, ST77XX_WHITE);   // rectangle
     tft.fillCircle(120, 250, 20, ST77XX_YELLOW);    // disque
+    tone(PIN_BUZZER, 1000, 300);
 }
 
 void loop() {
